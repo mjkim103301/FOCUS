@@ -1,5 +1,6 @@
 package com.example.demo.api.controller;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -53,15 +54,13 @@ public class FileController {
         }
     
     //
-    @GetMapping(
-    		  value = "/get-image-with-media-type",
-    		  produces = MediaType.IMAGE_JPEG_VALUE
-    		)
-    		public @ResponseBody byte[] getImageWithMediaType() throws IOException {
-    		    InputStream in = getClass()
-    		      .getResourceAsStream("/home/ubuntu/presentations/35/2/1.jpg");
-    		    return IOUtils.toByteArray(in);
-    		}
+    @GetMapping(value = "/image", produces = MediaType.IMAGE_JPEG_VALUE)
+    public @ResponseBody ResponseEntity<byte[]> getImageWithMediaType(@RequestParam(value="room_id")int room_id,@RequestParam(value="user_id")int user_id) throws IOException {
+        InputStream imageStream = new FileInputStream("/home/ubuntu/presentations/"+room_id+"/"+user_id+"/1.jpg");
+        byte[] imageByteArray = IOUtils.toByteArray(imageStream);
+        imageStream.close();
+        return new ResponseEntity<byte[]>(imageByteArray, HttpStatus.OK);
+    }
     //
     
 
