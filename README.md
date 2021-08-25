@@ -1,4 +1,5 @@
-![waving](https://capsule-render.vercel.app/api?type=waving&height=200&text=Focus:on-your-presentation&fontSize=50&fontAlignY=35&color=gradient)
+![logo](https://user-images.githubusercontent.com/39117025/130720174-651c1f3e-8245-42c1-8e4f-61530e159e88.png)
+
 
 ## 🏆 FOCUS
 ### 프로젝트 소개
