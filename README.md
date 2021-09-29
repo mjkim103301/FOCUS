@@ -100,7 +100,7 @@
 4. 브라우저를 통해 접속합니다. (크롬 부라우저 권장)
 
 ### 배포환경
-- __URL__ : https://i5a107.p.ssafy.io
+- __URL__ : https://www.focuspresentation.com
 - __배포 여부__ : O 
 - __접속 가능__ : 접속 가능
 - __HTTPS 적용__ : O 
