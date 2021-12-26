@@ -102,7 +102,7 @@
 ### 배포환경
 - __URL__ : https://www.focuspresentation.com
 - __배포 여부__ : O 
-- __접속 가능__ : 접속 가능
+- __접속 가능__ : X
 - __HTTPS 적용__ : O 
 - __PORT__ : 8443
 
